@@ -88,3 +88,14 @@ body {
   }
 }
 /* end of navbar */
+
+/*Home*/
+.home{
+  min-height: calc(100vh - 70px);
+  background-color: var(--primaryColor);
+}
+
+.exchange-icon{
+  font-size: 1.5rem;
+  margin: 3%;
+}

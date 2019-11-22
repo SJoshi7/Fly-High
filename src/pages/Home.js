@@ -1,8 +1,13 @@
 import React from 'react';
+import InputForm from '../components/InputForm';
 
 const Home = () => {
   return(
-    <div>Hello from Home Page</div>
+    <div className="home">
+      <div className="form-box">
+        <InputForm/>
+      </div>
+    </div>
   );
 }
 
