@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css";
 import Home from './pages/Home';
 import FlightDetails from './pages/FlightDetails';
 import Error from './pages/Error';
