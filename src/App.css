@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 *{
   margin: 0;
   padding: 0;
@@ -98,4 +100,14 @@ body {
 .exchange-icon{
   font-size: 1.5rem;
   margin: 3%;
+}
+
+#typedtext{
+  width: 500px;
+  height: 400px;
+  font-size: 3rem;
+  color:black;
+  text-shadow: 2px 2px white;
+  margin-left: 20%;
+   margin-top: 20%;
 }
