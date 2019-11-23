@@ -1,9 +1,41 @@
-import React from 'react';
+import React,{Component} from 'react';
+import DetailTable from '../components/DetailTable';
+import data from "../data/flightData.json";
 
-const FlightDetails = () => {
-  return(
-    <div>These are the flight details.</div>
-  );
+class FlightDetails extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      data: data,
+      direction:{
+        Price:'asc'
+      }
+    }
+  }
+
+  sortBy=(key)=>{
+    this.setState({
+      data: data.sort( (a,b) => (
+        this.state.direction[key] === 'asc'
+          ? parseFloat(a[key].replace(/\D/g,'')) - parseFloat(b[key].replace(/\D/g,''))
+          : parseFloat(b[key].replace(/\D/g,'')) - parseFloat(a[key].replace(/\D/g,''))
+      )),
+      direction:{
+        [key]: this.state.direction[key] === 'asc'
+          ? 'desc'
+          : 'asc'
+      }
+    })
+  }
+  render(){
+    return(
+      <>
+        <DetailTable
+          data={this.state.data}
+          sortBy={this.sortBy}/>
+      </>
+    );
+  }
 }
 
 export default FlightDetails;
