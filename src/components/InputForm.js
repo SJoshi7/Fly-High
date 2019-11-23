@@ -8,6 +8,7 @@ import jss from 'jss';
 import preset from 'jss-preset-default';
 import Button from '@material-ui/core/Button';
 import {typewriter} from '../helpers/typewriter';
+import {switchHelper} from '../helpers/switch';
 import airplane from '../images/airplane.svg';
 import {
   MuiPickersUtilsProvider,
@@ -30,7 +31,8 @@ const styles = {
   },
   exchangeIcon:{
     fontSize: '1.5rem',
-    margin: '3%'
+    margin: '3%',
+    cursor:'pointer'
   },
   inputTextStyle:{
     width:'40%'
@@ -118,9 +120,10 @@ class InputForm extends Component{
                 id="standard-required"
                 label="Source"
                 margin="normal"
+                id="source"
               />
 
-              <FaExchangeAlt className={classes.exchangeIcon}/>
+              <FaExchangeAlt className={classes.exchangeIcon} onClick={switchHelper}/>
 
               <TextField
                 className={classes.inputTextStyle}
@@ -128,6 +131,7 @@ class InputForm extends Component{
                 id="standard-required"
                 label="Destination"
                 margin="normal"
+                id="destination"
               />
 
               <MuiPickersUtilsProvider utils={DateFnsUtils}>
