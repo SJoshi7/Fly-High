@@ -29,11 +29,11 @@ class FlightDetails extends Component {
   }
   render(){
     return(
-      <>
+      <div>
         <DetailTable
           data={this.state.data}
           sortBy={this.sortBy}/>
-      </>
+      </div>
     );
   }
 }
