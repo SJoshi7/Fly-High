@@ -89,6 +89,15 @@ body {
     padding: 0.5rem 0;
   }
 }
+
+@media screen and (max-width:1024px){
+  #left-main-box{
+    display: none;
+  }
+  #right-main-box{
+    margin-top:6%;
+  }
+}
 /* end of navbar */
 
 /*Home*/
@@ -110,4 +119,20 @@ body {
   text-shadow: 2px 2px white;
   margin-left: 20%;
    margin-top: 20%;
+}
+
+#airplaneImage{
+  position: absolute;
+  top:60%;
+  left:10%;
+  z-index: 1;
+  animation-name: airplaneTransform;
+  animation-delay:2s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes airplaneTransform {
+    from {left: 10%;top:60%;opacity: 1;}
+    to{left:70%;top:20%;opacity: 0}
 }
