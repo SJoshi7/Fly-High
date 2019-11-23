@@ -19,7 +19,8 @@ const styles = {
       border:'2px black solid',
       margin:'3%',
       padding:'10px',
-      width:'40%'
+      width:'40%',
+      height:'fit-content'
     },
     cover:{
       width: 60,
@@ -47,74 +48,78 @@ const styles = {
     },
   '@media screen and (max-width: 768px)':{
     cardStyle:{
-      display:'flex',
-      border:'2px black solid',
-      margin:'2%'
+      margin:'2%',
+      width:'95%',
+      fontSize:'15px'
     },
     cover:{
       width: 40,
       height:40,
       marginLeft:'4px'
     },
-    pStyle:{
-      fontWeight:'bold'
-    },
     styleDiv:{
-      margin:'5px',
+      margin:'4px',
       padding:'2px'
     },
     bookButton:{
-      float:"right",
       padding:"7%",
-      marginTop:'10%',
-      color:'black',
-      backgroundColor:'#00F2A9',
-      border:'1px black solid',
-      boxShadow:'2px 2px #00F2A9'
+      marginTop:'10%'
     }
+  }
+}
+const imgSelect = (a) => {
+  if(a === 1){
+    return jetAirways
+  }
+  else if(a === 2){
+    return indigo
+  }
+  else if(a===3){
+    return airindia
   }
 }
 
 const { classes } = jss.createStyleSheet(styles).attach();
 
-export default function DetailTable() {
-
+export default function DetailTable(props) {
   return (
-    <Card className={classes.cardStyle}>
-      <div className={classes.styleDiv} >
-        <CardMedia
-          className={classes.cover}
-          image={indigo}
-        />
-        <span className={classes.spanStyle}>Indigo</span>
-      </div>
-      <div className={classes.styleDiv}>
-        <p className={classes.pStyle}>
-          09:30
-        </p>
-        <span className={classes.spanStyle}>Pune</span>
-      </div>
+    props.data.map(item=>(
+      <Card className={classes.cardStyle}>
+        <div className={classes.styleDiv} >
+          <CardMedia
+            className={classes.cover}
+            image={imgSelect(item.logo)}
+          />
+          <span className={classes.spanStyle}>{item.Airline}</span>
+        </div>
+        <div className={classes.styleDiv}>
+          <p className={classes.pStyle}>
+            09:30
+          </p>
+          <span className={classes.spanStyle}>Pune</span>
+        </div>
 
-      <div className={classes.styleDiv}>
-        <span>2h 30m</span>
-        <CardMedia
-          className={classes.cover}
-          image={arrowRight}
-        />
+        <div className={classes.styleDiv}>
+          <span>2h 30m</span>
+          <CardMedia
+            className={classes.cover}
+            image={arrowRight}
+          />
 
-      </div>
+        </div>
 
-      <div className={classes.styleDiv}>
-        <p className={classes.pStyle}>
-          11:30
-        </p >
-        <span className={classes.spanStyle}>Bangalore</span>
-      </div>
+        <div className={classes.styleDiv}>
+          <p className={classes.pStyle}>
+            11:30
+          </p >
+          <span className={classes.spanStyle}>Bangalore</span>
+        </div>
 
-      <div className={classes.styleDiv}>
-        <p className={classes.pStyle}>Rs.6000</p>
-        <button className={classes.bookButton}>Book</button>
-      </div>
-    </Card>
+        <div className={classes.styleDiv}>
+          <p className={classes.pStyle}>Rs.6000</p>
+          <button className={classes.bookButton}>Book</button>
+        </div>
+      </Card>
+    ))
   );
 }

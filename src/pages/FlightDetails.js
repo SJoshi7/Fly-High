@@ -1,6 +1,20 @@
 import React,{Component} from 'react';
 import DetailTable from '../components/DetailTable';
 import data from "../data/flightData.json";
+import jss from 'jss';
+import preset from 'jss-preset-default';
+jss.setup(preset());
+
+const styles = {
+  flightContainer:{
+    backgroundColor:'#00F2A9',
+    minHeight: "calc(100vh - 70px)",
+    display:'flex',
+    flexFlow:'column'
+  }
+}
+
+const { classes } = jss.createStyleSheet(styles).attach();
 
 class FlightDetails extends Component {
   constructor(props){
@@ -29,7 +43,7 @@ class FlightDetails extends Component {
   }
   render(){
     return(
-      <div>
+      <div className={classes.flightContainer}>
         <DetailTable
           data={this.state.data}
           sortBy={this.sortBy}/>

@@ -8,7 +8,7 @@
     "Airline": "Jet Airways",
     "Seats Available": 1,
     "Price": "Rs.6900",
-    "logo":""
+    "logo":1
   },
   {
     "From": "Kolkata",
@@ -19,7 +19,7 @@
     "Airline": "Air India",
     "Seats Available": 1,
     "Price": "Rs.7500",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Bangalore",
@@ -30,7 +30,7 @@
     "Airline": "Jet Airways",
     "Seats Available": 2,
     "Price": "Rs.4000",
-    "logo":""
+    "logo":1
   },
   {
     "From": "Delhi",
@@ -41,7 +41,7 @@
     "Airline": "Air India",
     "Seats Available": 3,
     "Price": "Rs.9000",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Bangalore",
@@ -52,7 +52,7 @@
     "Airline": "Air India",
     "Seats Available": 3,
     "Price": "Rs.10000",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Kolkata",
@@ -63,7 +63,7 @@
     "Airline": "Jet Airways",
     "Seats Available": 3,
     "Price": "Rs.6300",
-    "logo":""
+    "logo":1
   },
   {
     "From": "Bangalore",
@@ -74,7 +74,7 @@
     "Airline": "Indigo",
     "Seats Available": 5,
     "Price": "Rs.6000",
-    "logo":""
+    "logo":2
   },
   {
     "From": "Delhi",
@@ -85,7 +85,7 @@
     "Airline": "Air India",
     "Seats Available": 7,
     "Price": "Rs.8000",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Chennai",
@@ -96,7 +96,7 @@
     "Airline": "Air India",
     "Seats Available": 10,
     "Price": "Rs.7000",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Kolkata",
@@ -117,7 +117,7 @@
     "Airline": "Air India",
     "Seats Available": 12,
     "Price": "Rs.9000",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Bangalore",
@@ -128,7 +128,7 @@
     "Airline": "Indigo",
     "Seats Available": 21,
     "Price": "Rs.6500",
-    "logo":""
+    "logo":2
   },
   {
     "From": "Kolkata",
@@ -139,7 +139,7 @@
     "Airline": "Indigo",
     "Seats Available": 21,
     "Price": "Rs.5700",
-    "logo":""
+    "logo":2
   },
   {
     "From": "Chennai",
@@ -150,7 +150,7 @@
     "Airline": "Air India",
     "Seats Available": 24,
     "Price": "Rs.5750",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Delhi",
@@ -161,7 +161,7 @@
     "Airline": "Indigo",
     "Seats Available": 25,
     "Price": "Rs.7999",
-    "logo":""
+    "logo":2
   },
   {
     "From": "Chennai",
@@ -172,7 +172,7 @@
     "Airline": "Air India",
     "Seats Available": 26,
     "Price": "Rs.8000",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Bangalore",
@@ -183,7 +183,7 @@
     "Airline": "Air India",
     "Seats Available": 27,
     "Price": "Rs.5000",
-    "logo":""
+    "logo":3
   },
   {
     "From": "Delhi",
@@ -194,7 +194,7 @@
     "Airline": "Jet Airways",
     "Seats Available": 29,
     "Price": "Rs.7500",
-    "logo":""
+    "logo":1
   },
   {
     "From": "Kolkata",
@@ -216,6 +216,6 @@
     "Airline": "Indigo",
     "Seats Available": 56,
     "Price": "Rs.4800",
-    "logo":""
+    "logo":2
   }
 ]
