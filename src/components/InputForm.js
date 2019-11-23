@@ -8,6 +8,7 @@ import jss from 'jss';
 import preset from 'jss-preset-default';
 import Button from '@material-ui/core/Button';
 import {typewriter} from '../helpers/typewriter';
+import airplane from '../images/airplane.svg';
 import {
   MuiPickersUtilsProvider,
   KeyboardTimePicker,
@@ -103,11 +104,12 @@ class InputForm extends Component{
   render(){
     return(
       <Grid container>
-        <Grid item xs={12} sm>
+        <Grid item xs={12} sm id="left-main-box">
           <div id="typedtext">
           </div>
+          <img src={airplane} id="airplaneImage" width="50px" height="50px"/>
         </Grid>
-        <Grid item xs={12} sm>
+        <Grid item xs={12} sm id="right-main-box">
           <Paper className={classes.boxFormStyle}>
             <div className={classes.inputFormStyle}>
               <TextField
