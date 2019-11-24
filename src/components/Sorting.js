@@ -36,7 +36,7 @@ const styles= {
   '@media screen and (max-width: 768px)': {
     sortingBox:{
       display:'none',
-      position: 'absolute',
+      position: 'fixed',
       width: '50%',
       margin: '0%',
       bottom:'4%',

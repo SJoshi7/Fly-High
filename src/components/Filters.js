@@ -55,8 +55,8 @@ const styles= {
       width: '80%',
       position: 'fixed',
       height: '70%',
-      bottom: '1%',
-      margin: '0%',
+      bottom: '10%',
+      margin: '10%',
       zIndex:1
     }
   }

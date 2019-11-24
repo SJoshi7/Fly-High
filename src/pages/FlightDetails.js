@@ -65,7 +65,8 @@ class FlightDetails extends Component {
     }
   }
 
-  selectFilterOrSort = (a) => {
+  selectFilterOrSort = (a,b) => {
+    document.getElementById(b).style.display = 'none';
     let displayVal = document.getElementById(a).style.display;
     if(displayVal == 'block'){
       document.getElementById('flightContainerId').style.opacity = 1;
@@ -105,13 +106,13 @@ class FlightDetails extends Component {
         </div>
         <Paper square className={classes.tabStyle} style={{zIndex:1}}>
           <button
-            onClick={()=>{this.selectFilterOrSort('filterBoxId')}}
+            onClick={()=>{this.selectFilterOrSort('filterBoxId','sortDiv')}}
             className={classes.tabButtonStyle}
             style={{borderRight:'1px black solid'}}>
               <FilterListIcon/>
           </button>
           <button
-            onClick={()=>{this.selectFilterOrSort('sortDiv')}}
+            onClick={()=>{this.selectFilterOrSort('sortDiv','filterBoxId')}}
             className={classes.tabButtonStyle}>
               <SwapVertIcon/>
           </button>
