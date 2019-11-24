@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import DetailTable from '../components/DetailTable';
+import Filters from '../components/Filters';
 import jss from 'jss';
 import preset from 'jss-preset-default';
 jss.setup(preset());
@@ -53,7 +54,7 @@ class FlightDetails extends Component {
   render(){
     return(
       <div className={classes.mainContainer}>
-        <div className={classes.filterConatiner}></div>
+        <Filters/>
         <div className={classes.flightContainer}>
           <DetailTable
             data={this.state.data}
