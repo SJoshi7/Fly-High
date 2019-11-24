@@ -49,7 +49,8 @@ const styles = {
   buttonStyle:{
     backgroundColor:'#00F2A9',
     marginTop:'10%',
-    border:'1px black solid'
+    border:'1px black solid',
+    textDecoration:'none'
   },
   '@media screen and (max-width: 768px)': {
     boxFormStyle: {

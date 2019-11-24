@@ -55,7 +55,7 @@ const styles= {
       width: '96%',
       position: 'fixed',
       height: 'fit-content',
-      top: '15%',
+      top: '12%',
       margin: '2%',
       zIndex:1
     }
