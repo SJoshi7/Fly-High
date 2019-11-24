@@ -6,7 +6,6 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import RadioGroup from '@material-ui/core/RadioGroup';
-
 import Checkbox from '@material-ui/core/Checkbox';
 import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -21,6 +20,7 @@ const styles= {
     flexFlow:'column',
     width:'20%',
     height:'30%',
+    marginTop:'10%',
     border:'2px black solid',
     boxShadow:'2px 2px white',
     marginLeft:'5%'
@@ -61,15 +61,34 @@ class Sorting extends Component{
         <div className={classes.sortingContainer}>
           <FormControl component="fieldset" className={classes.formControl}>
              <RadioGroup aria-label="sort" name="sort" value={this.value} onChange={this.handleChange}>
-               <FormControlLabel value="price" control={<Radio color="primary"/>} label="Price" />
-               <FormControlLabel value="duration" control={<Radio color="primary"/>} label="Duration" />
-               <FormControlLabel value="departure" control={<Radio color="primary"/>} label="Departure" />
-               <FormControlLabel value="arrival" control={<Radio color="primary"/>} label="Arrival" />
-               <FormControlLabel value="seat" control={<Radio color="primary"/>} label="Seat Availibility" />
+               <FormControlLabel
+                  value="price"
+                  control={<Radio color="primary" onClick={()=>this.props.sortBy('Price')}/>}
+                  label="Price"
+                />
+               <FormControlLabel
+                  value="duration"
+                  control={<Radio color="primary" onClick={()=>this.props.sortBy('Duration')}/>}
+                  label="Duration"
+                />
+               <FormControlLabel
+                  value="departure"
+                  control={<Radio color="primary" onClick={()=>this.props.sortBy('Departure')}/>}
+                  label="Departure"
+                />
+               <FormControlLabel
+                  value="arrival"
+                  control={<Radio color="primary" onClick={()=>this.props.sortBy('Arrival')}/>}
+                  label="Arrival"
+                />
+               <FormControlLabel
+                  value="seat"
+                  control={<Radio color="primary" onClick={()=>this.props.sortBy('Seats')}/>}
+                  label="Seat Availibility"
+                />
              </RadioGroup>
          </FormControl>
         </div>
-
       </Paper>
     )
   }

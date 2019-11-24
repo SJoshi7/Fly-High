@@ -6,7 +6,7 @@
     "Arrival": "19:40",
     "Duration": "2h 40m",
     "Airline": "Jet Airways",
-    "Seats": 1,
+    "Seats": "1 ",
     "Price": "Rs.6900",
     "logo":1
   },
@@ -17,7 +17,7 @@
     "Arrival": "00:10",
     "Duration": "2h 30m",
     "Airline": "Air India",
-    "Seats": 1,
+    "Seats": "1",
     "Price": "Rs.7500",
     "logo":3
   },
@@ -28,7 +28,7 @@
     "Arrival": "09:30",
     "Duration": "2h 30m",
     "Airline": "Jet Airways",
-    "Seats": 2,
+    "Seats": "2",
     "Price": "Rs.4000",
     "logo":1
   },
@@ -39,7 +39,7 @@
     "Arrival": "15:20",
     "Duration": "2h 50m",
     "Airline": "Air India",
-    "Seats": 3,
+    "Seats": "3",
     "Price": "Rs.9000",
     "logo":3
   },
@@ -50,7 +50,7 @@
     "Arrival": "19:00",
     "Duration": "2h 00m",
     "Airline": "Air India",
-    "Seats": 3,
+    "Seats": "3",
     "Price": "Rs.10000",
     "logo":3
   },
@@ -61,7 +61,7 @@
     "Arrival": "00:10",
     "Duration": "2h 40m",
     "Airline": "Jet Airways",
-    "Seats": 3,
+    "Seats": "3",
     "Price": "Rs.6300",
     "logo":1
   },
@@ -72,7 +72,7 @@
     "Arrival": "20:00",
     "Duration": "2h 00m",
     "Airline": "Indigo",
-    "Seats": 5,
+    "Seats": "5",
     "Price": "Rs.6000",
     "logo":2
   },
@@ -83,7 +83,7 @@
     "Arrival": "06:00",
     "Duration": "3h 00m",
     "Airline": "Air India",
-    "Seats": 7,
+    "Seats": "7",
     "Price": "Rs.8000",
     "logo":3
   },
@@ -94,7 +94,7 @@
     "Arrival": "05:00",
     "Duration": "3h 00m",
     "Airline": "Air India",
-    "Seats": 10,
+    "Seats": "10 ",
     "Price": "Rs.7000",
     "logo":3
   },
@@ -105,8 +105,9 @@
     "Arrival": "7:50 AM",
     "Duration": "2h 00m",
     "Airline": "Air India",
-    "Seats": 12,
-    "Price": "Rs.5699"
+    "Seats": "12",
+    "Price": "Rs.5699",
+    "logo":3
   },
   {
     "From": "delhi",
@@ -115,7 +116,7 @@
     "Arrival": "15:20",
     "Duration": "3h 00m",
     "Airline": "Air India",
-    "Seats": 12,
+    "Seats": "12",
     "Price": "Rs.9000",
     "logo":3
   },
@@ -126,7 +127,7 @@
     "Arrival": "05:00",
     "Duration": "2h 00m",
     "Airline": "Indigo",
-    "Seats": 21,
+    "Seats": "21",
     "Price": "Rs.6500",
     "logo":2
   },
@@ -137,7 +138,7 @@
     "Arrival": "08:00",
     "Duration": "2h 10m",
     "Airline": "Indigo",
-    "Seats": 21,
+    "Seats": "21",
     "Price": "Rs.5700",
     "logo":2
   },
@@ -148,7 +149,7 @@
     "Arrival": "19:00",
     "Duration": "2h 10m",
     "Airline": "Air India",
-    "Seats": 24,
+    "Seats": "24 ",
     "Price": "Rs.5750",
     "logo":3
   },
@@ -159,7 +160,7 @@
     "Arrival": "06:00",
     "Duration": "3h 00m",
     "Airline": "Indigo",
-    "Seats": 25,
+    "Seats": "25",
     "Price": "Rs.7999",
     "logo":2
   },
@@ -170,7 +171,7 @@
     "Arrival": "08:00",
     "Duration": "3h 00m",
     "Airline": "Air India",
-    "Seats": 26,
+    "Seats": "26 ",
     "Price": "Rs.8000",
     "logo":3
   },
@@ -181,7 +182,7 @@
     "Arrival": "21:00",
     "Duration": "3h 00m",
     "Airline": "Air India",
-    "Seats": 27,
+    "Seats": "27",
     "Price": "Rs.5000",
     "logo":3
   },
@@ -192,7 +193,7 @@
     "Arrival": "06:05",
     "Duration": "3h 05m",
     "Airline": "Jet Airways",
-    "Seats": 29,
+    "Seats": "29",
     "Price": "Rs.7500",
     "logo":1
   },
@@ -203,9 +204,9 @@
     "Arrival": "04:50",
     "Duration": "2h 20m",
     "Airline": "Air India",
-    "Seats": 36,
+    "Seats": "36",
     "Price": "Rs.4500",
-    "logo":""
+    "logo":3
   },
   {
     "From": "chennai",
@@ -214,7 +215,7 @@
     "Arrival": "19:50",
     "Duration": "2h 50m",
     "Airline": "Indigo",
-    "Seats": 56,
+    "Seats": "56",
     "Price": "Rs.4800",
     "logo":2
   }

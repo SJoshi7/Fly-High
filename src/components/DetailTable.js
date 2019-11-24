@@ -3,7 +3,6 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-
 import airindia from '../images/airindia.png';
 import jetAirways from '../images/jetAirways.png';
 import indigo from '../images/indigo.png';

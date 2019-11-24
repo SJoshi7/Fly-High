@@ -64,9 +64,9 @@ class FlightDetails extends Component {
         <div className={classes.flightContainer}>
           <DetailTable
             data={this.state.data}
-            sortBy={this.sortBy}/>
+            />
         </div>
-        <Sorting/>
+        <Sorting sortBy={this.sortBy} data={this.state.data}/>
       </div>
     );
   }
