@@ -57,6 +57,7 @@ const styles= {
       height: 'fit-content',
       top: '12%',
       margin: '2%',
+      marginBottom:'5%',
       zIndex:1
     }
   }
