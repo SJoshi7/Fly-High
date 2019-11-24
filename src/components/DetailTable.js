@@ -43,7 +43,8 @@ const styles = {
       color:'black',
       backgroundColor:'#00F2A9',
       border:'1px black solid',
-      boxShadow:'2px 2px #00F2A9'
+      boxShadow:'2px 2px #00F2A9',
+      cursor:'pointer'
     },
   '@media screen and (max-width: 768px)':{
     cardStyle:{
@@ -62,7 +63,7 @@ const styles = {
     },
     bookButton:{
       padding:"7%",
-      marginTop:'10%'
+      marginTop:'10%',
     }
   }
 }

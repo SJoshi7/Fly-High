@@ -61,15 +61,14 @@ class Filters extends Component{
           <label class="container" className={classes.labelStyle}>
             Indigo
             <Checkbox color="primary"/>
-            <span class="checkmark"></span>
           </label>
-          <label class="container" className={classes.labelStyle}>Jet Airways
+          <label class="container" className={classes.labelStyle}>
+            Jet Airways
             <Checkbox color="primary"/>
-            <span class="checkmark"></span>
           </label>
-          <label class="container" className={classes.labelStyle}>Air India
+          <label class="container" className={classes.labelStyle}>
+            Air India
             <Checkbox color="primary"/>
-            <span class="checkmark"></span>
           </label>
         </div>
 
@@ -78,17 +77,17 @@ class Filters extends Component{
           <label class="container">
             0-2
             <Checkbox color="primary"/>
-            <span class="checkmark"></span>
+
           </label>
           <label class="container">
             2-3
             <Checkbox color="primary"/>
-            <span class="checkmark"></span>
+
           </label>
           <label class="container">
             >3
             <Checkbox color="primary"/>
-            <span class="checkmark"></span>
+
           </label>
         </div>
 
@@ -98,22 +97,22 @@ class Filters extends Component{
             <label class="container">
               12am-06am
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
             <label class="container">
               06am-12pm
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
             <label class="container">
               12pm-06pm
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
             <label class="container">
               06pm-12am
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
           </div>
 
@@ -122,22 +121,22 @@ class Filters extends Component{
             <label class="container">
               12am-06am
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
             <label class="container">
               06am-12pm
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
             <label class="container">
               12pm-06pm
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
             <label class="container">
               06pm-12am
               <Checkbox color="primary"/>
-              <span class="checkmark"></span>
+
             </label>
           </div>
         </div>

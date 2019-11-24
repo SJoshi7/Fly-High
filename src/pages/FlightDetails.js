@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import DetailTable from '../components/DetailTable';
 import Filters from '../components/Filters';
+import Sorting from '../components/Sorting';
 import jss from 'jss';
 import preset from 'jss-preset-default';
 jss.setup(preset());
@@ -65,6 +66,7 @@ class FlightDetails extends Component {
             data={this.state.data}
             sortBy={this.sortBy}/>
         </div>
+        <Sorting/>
       </div>
     );
   }
