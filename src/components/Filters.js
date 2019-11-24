@@ -52,11 +52,11 @@ const styles= {
   '@media screen and (max-width: 768px)': {
     filterBox:{
       display:'none',
-      width: '80%',
+      width: '96%',
       position: 'fixed',
-      height: '70%',
-      bottom: '10%',
-      margin: '10%',
+      height: 'fit-content',
+      top: '15%',
+      margin: '2%',
       zIndex:1
     }
   }
