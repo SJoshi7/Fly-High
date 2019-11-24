@@ -2,13 +2,8 @@ import React,{Component} from 'react';
 import Paper from '@material-ui/core/Paper';
 import jss from 'jss';
 import preset from 'jss-preset-default';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormGroup from '@material-ui/core/FormGroup';
 import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
-
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 jss.setup(preset());
 
@@ -74,15 +69,15 @@ class Filters extends Component{
         </center>
         <div className={classes.checkboxContainer0}>
           <h3>Airlines</h3>
-          <label class="container" className={classes.labelStyle}>
+          <label className={classes.labelStyle}>
             Indigo
             <Checkbox color="primary"/>
           </label>
-          <label class="container" className={classes.labelStyle}>
+          <label className={classes.labelStyle}>
             Jet Airways
             <Checkbox color="primary"/>
           </label>
-          <label class="container" className={classes.labelStyle}>
+          <label className={classes.labelStyle}>
             Air India
             <Checkbox color="primary"/>
           </label>

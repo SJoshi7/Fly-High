@@ -2,10 +2,7 @@ import React,{Component} from 'react';
 import DetailTable from '../components/DetailTable';
 import Filters from '../components/Filters';
 import Sorting from '../components/Sorting';
-
 import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import SwapVertIcon from '@material-ui/icons/SwapVert';
 import jss from 'jss';
@@ -68,11 +65,11 @@ class FlightDetails extends Component {
   selectFilterOrSort = (a,b) => {
     document.getElementById(b).style.display = 'none';
     let displayVal = document.getElementById(a).style.display;
-    if(displayVal == 'block'){
+    if(displayVal === 'block'){
       document.getElementById('flightContainerId').style.opacity = 1;
       document.getElementById(a).style.display = 'none'
     }
-    else if(displayVal=='' || displayVal=='none'){
+    else if(displayVal==='' || displayVal==='none'){
       document.getElementById(a).style.display = 'block'
       document.getElementById('flightContainerId').style.opacity = 0.5;
     }

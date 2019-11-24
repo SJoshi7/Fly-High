@@ -88,11 +88,6 @@ class InputForm extends Component{
   constructor(props){
     super(props);
     this.state = {
-      source:'',
-      destination:'',
-      data:'',
-      seat:'',
-      reverse:false,
       selectedDate: new Date()
     }
   }
