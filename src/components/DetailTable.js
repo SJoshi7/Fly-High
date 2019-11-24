@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
@@ -17,9 +16,9 @@ const styles = {
     cardStyle:{
       display:'flex',
       border:'2px black solid',
-      margin:'3%',
+      margin:'10px',
       padding:'10px',
-      width:'40%',
+      width:'100%',
       height:'fit-content'
     },
     cover:{
@@ -67,16 +66,10 @@ const styles = {
     }
   }
 }
+
 const imgSelect = (a) => {
-  if(a === 1){
-    return jetAirways
-  }
-  else if(a === 2){
-    return indigo
-  }
-  else if(a===3){
-    return airindia
-  }
+  let logoArray = [jetAirways,indigo,airindia];
+  return logoArray[a-1];
 }
 
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -94,13 +87,13 @@ export default function DetailTable(props) {
         </div>
         <div className={classes.styleDiv}>
           <p className={classes.pStyle}>
-            09:30
+            {item.Departure}
           </p>
-          <span className={classes.spanStyle}>Pune</span>
+          <span className={classes.spanStyle}>{item.From}</span>
         </div>
 
         <div className={classes.styleDiv}>
-          <span>2h 30m</span>
+          <span>{item.Duration}</span>
           <CardMedia
             className={classes.cover}
             image={arrowRight}
@@ -110,13 +103,13 @@ export default function DetailTable(props) {
 
         <div className={classes.styleDiv}>
           <p className={classes.pStyle}>
-            11:30
+            {item.Arrival}
           </p >
-          <span className={classes.spanStyle}>Bangalore</span>
+          <span className={classes.spanStyle}>{item.To}</span>
         </div>
 
         <div className={classes.styleDiv}>
-          <p className={classes.pStyle}>Rs.6000</p>
+          <p className={classes.pStyle}>{item.Price}</p>
           <button className={classes.bookButton}>Book</button>
         </div>
       </Card>

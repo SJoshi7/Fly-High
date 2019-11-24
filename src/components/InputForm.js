@@ -10,9 +10,11 @@ import Button from '@material-ui/core/Button';
 import {typewriter} from '../helpers/typewriter';
 import {switchHelper} from '../helpers/switch';
 import airplane from '../images/airplane.svg';
+import {searchFlight} from '../helpers/searchFlight';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
+
 import {
   MuiPickersUtilsProvider,
-  KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
@@ -155,7 +157,7 @@ class InputForm extends Component{
               <div>
                 <TextField
                   className={classes.inputTextStyle}
-                  id="standard-number"
+                  id="seats"
                   label="Passenger(s)"
                   type="number"
                   InputLabelProps={{
@@ -175,9 +177,15 @@ class InputForm extends Component{
               </div>
             </div>
             <center>
-              <Button variant="contained" className={classes.buttonStyle}>
+              <Link to="/flight-details">
+              <Button
+                variant="contained"
+                className={classes.buttonStyle}
+                onClick={searchFlight}
+                >
                 Search Flights
               </Button>
+              </Link>
             </center>
 
           </Paper>

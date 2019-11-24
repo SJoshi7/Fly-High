@@ -1,18 +1,27 @@
 import React,{Component} from 'react';
 import DetailTable from '../components/DetailTable';
-import data from "../data/flightData.json";
 import jss from 'jss';
 import preset from 'jss-preset-default';
 jss.setup(preset());
 
 const styles = {
-  flightContainer:{
+  mainContainer:{
     backgroundColor:'#00F2A9',
     minHeight: "calc(100vh - 70px)",
+    display:'flex',
+    flexFlow:'row'
+  },
+  filterConatiner:{
+    height:"400px",
+    width:'400px',
+    backgroundColor:'red'
+  },
+  flightContainer:{
     display:'flex',
     flexFlow:'column'
   }
 }
+
 
 const { classes } = jss.createStyleSheet(styles).attach();
 
@@ -20,7 +29,7 @@ class FlightDetails extends Component {
   constructor(props){
     super(props);
     this.state={
-      data: data,
+      data: JSON.parse(localStorage.getItem('searchData')),
       direction:{
         Price:'asc'
       }
@@ -29,7 +38,7 @@ class FlightDetails extends Component {
 
   sortBy=(key)=>{
     this.setState({
-      data: data.sort( (a,b) => (
+      data: this.state.data.sort( (a,b) => (
         this.state.direction[key] === 'asc'
           ? parseFloat(a[key].replace(/\D/g,'')) - parseFloat(b[key].replace(/\D/g,''))
           : parseFloat(b[key].replace(/\D/g,'')) - parseFloat(a[key].replace(/\D/g,''))
@@ -43,10 +52,13 @@ class FlightDetails extends Component {
   }
   render(){
     return(
-      <div className={classes.flightContainer}>
-        <DetailTable
-          data={this.state.data}
-          sortBy={this.sortBy}/>
+      <div className={classes.mainContainer}>
+        <div className={classes.filterConatiner}></div>
+        <div className={classes.flightContainer}>
+          <DetailTable
+            data={this.state.data}
+            sortBy={this.sortBy}/>
+        </div>
       </div>
     );
   }
