@@ -26,7 +26,20 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <script>
+    resizeFunction=()=>{
+      var w = window.outerWidth;
+      if(w>1024){
+        document.getElementById('sortDiv').style.display = 'block';
+        document.getElementById('filterBoxId').style.display = 'block';
+      }
+      else if(w<1024){
+        document.getElementById('sortDiv').style.display = 'none';
+        document.getElementById('filterBoxId').style.display = 'none';
+      }
+    }
+  </script>
+  <body onresize="resizeFunction()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
