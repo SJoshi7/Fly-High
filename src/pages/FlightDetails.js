@@ -91,18 +91,9 @@ class FlightDetails extends Component {
       }
     })
   }
-
-  resizeFunction=()=>{
-    var w = window.outerWidth;
-    if(w>1024){
-      document.getElementById('sortDiv').style.display = 'block';
-      document.getElementById('filterBoxId').style.display = 'block';
-    }
-  }
-
   render(){
     return(
-      <div onResize={this.resizeFunction}>
+      <div>
       <div className={classes.mainContainer}>
         <Filters className={classes.filterSection}/>
         <div className={classes.flightContainer} id="flightContainerId">
