@@ -43,7 +43,8 @@ const styles = {
       backgroundColor:'#00F2A9',
       border:'1px black solid',
       boxShadow:'2px 2px #00F2A9',
-      cursor:'pointer'
+      cursor:'pointer',
+      borderRadius:'5px'
     },
   '@media screen and (max-width: 768px)':{
     cardStyle:{

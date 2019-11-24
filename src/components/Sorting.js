@@ -34,7 +34,13 @@ const styles= {
   },
   '@media screen and (max-width: 768px)': {
     sortingBox:{
-      display:'none'
+      display:'none',
+      position: 'absolute',
+      width: '50%',
+      margin: '0%',
+      bottom:'4%',
+      right: '0%',
+      height: '45%'
     }
   }
 }
@@ -55,7 +61,7 @@ class Sorting extends Component{
 
   render(){
     return(
-      <Paper className={classes.sortingBox}>
+      <Paper className={classes.sortingBox} id="sortDiv">
         <h3 style={{textShadow:'1px 1px #00f2a9'}}>Sort By:</h3>
 
         <div className={classes.sortingContainer}>

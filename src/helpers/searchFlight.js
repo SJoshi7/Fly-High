@@ -11,7 +11,7 @@ export const searchFlight = () => {
     // console.log(item);
     // console.log(item.From === source && item.To === destination && item.Seats > seats);
     // console.log(item.From == source);
-    return (item.From === source && item.To === destination && item.Seats > seats)
+    return (item.From === source && item.To === destination && item.Seats >= seats)
   }
   // console.log(flightData.filter(isAvailable));
   localStorage.removeItem('searchData');

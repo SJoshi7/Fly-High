@@ -6,6 +6,8 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import Checkbox from '@material-ui/core/Checkbox';
+import Button from '@material-ui/core/Button';
+
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 jss.setup(preset());
@@ -17,10 +19,11 @@ const styles= {
   },
   filterBox:{
     margin:"3%",
-    padding:'2%',
+    padding:'1%',
     display:'flex',
     flexFlow:'column',
     width:'27%',
+    height:'75%',
     border:'2px black solid',
     boxShadow:'2px 2px white'
   },
@@ -36,8 +39,12 @@ const styles= {
     marginTop:'10px',
     paddingLeft:'5px'
   },
-  checkboxStyle:{
-
+  filterButton:{
+    width:'30%',
+    backgroundColor:'#00F2A9',
+    color:'black',
+    border:'1px black solid',
+    marginTop:'7%'
   },
   labelStyle:{
 
@@ -55,7 +62,9 @@ class Filters extends Component{
   render(){
     return(
       <Paper className={classes.filterBox}>
-        <h3 style={{textShadow:'1px 1px #00f2a9'}}>Filters</h3>
+        <center>
+          <h3 style={{textShadow:'1px 1px #00f2a9',marginBottom:'4%'}}>Filter By:</h3>
+        </center>
         <div className={classes.checkboxContainer0}>
           <h3>Airlines</h3>
           <label class="container" className={classes.labelStyle}>
@@ -75,17 +84,17 @@ class Filters extends Component{
         <div className={classes.checkboxContainer0}>
           <h3>Duration</h3>
           <label class="container">
-            0-2
+            0-2hours
             <Checkbox color="primary"/>
 
           </label>
           <label class="container">
-            2-3
+            2-3hours
             <Checkbox color="primary"/>
 
           </label>
           <label class="container">
-            >3
+            >3hours
             <Checkbox color="primary"/>
 
           </label>
@@ -139,7 +148,13 @@ class Filters extends Component{
 
             </label>
           </div>
+
         </div>
+        <center>
+        <Button variant="contained" className={classes.filterButton}>
+          Apply
+        </Button>
+        </center>
       </Paper>
     )
   }
