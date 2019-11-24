@@ -45,7 +45,8 @@ const styles = {
       width:'50%',
       borderStyle:'none',
       backgroundColor:'white',
-      padding:'5px'
+      padding:'5px',
+      zIndex:1
     }
   }
 }
@@ -64,15 +65,15 @@ class FlightDetails extends Component {
     }
   }
 
-  selectSort = () => {
-    let displayVal = document.getElementById('sortDiv').style.display;
+  selectFilterOrSort = (a) => {
+    let displayVal = document.getElementById(a).style.display;
     if(displayVal == 'block'){
       document.getElementById('flightContainerId').style.opacity = 1;
-      document.getElementById('sortDiv').style.display = 'none'
+      document.getElementById(a).style.display = 'none'
     }
     else if(displayVal=='' || displayVal=='none'){
-      document.getElementById('sortDiv').style.display = 'block'
-      document.getElementById('flightContainerId').style.opacity = 0.2;
+      document.getElementById(a).style.display = 'block'
+      document.getElementById('flightContainerId').style.opacity = 0.5;
     }
   }
 
@@ -101,19 +102,20 @@ class FlightDetails extends Component {
             />
         </div>
         <Sorting sortBy={this.sortBy} data={this.state.data}/>
-      </div>
-      <Paper square className={classes.tabStyle}>
-        <button
-          className={classes.tabButtonStyle}
-          style={{borderRight:'1px black solid'}}>
-            <FilterListIcon/>
-        </button>
-        <button
-          onClick={this.selectSort}
-          className={classes.tabButtonStyle}>
-            <SwapVertIcon/>
-        </button>
-      </Paper>
+        </div>
+        <Paper square className={classes.tabStyle} style={{zIndex:1}}>
+          <button
+            onClick={()=>{this.selectFilterOrSort('filterBoxId')}}
+            className={classes.tabButtonStyle}
+            style={{borderRight:'1px black solid'}}>
+              <FilterListIcon/>
+          </button>
+          <button
+            onClick={()=>{this.selectFilterOrSort('sortDiv')}}
+            className={classes.tabButtonStyle}>
+              <SwapVertIcon/>
+          </button>
+        </Paper>
       </div>
     );
   }

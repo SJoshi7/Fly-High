@@ -14,6 +14,7 @@ jss.setup(preset());
 
 const styles= {
   sortingBox:{
+    display:'block',
     margin:"3%",
     padding:'2%',
     display:'flex',

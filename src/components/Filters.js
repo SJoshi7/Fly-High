@@ -51,7 +51,13 @@ const styles= {
   },
   '@media screen and (max-width: 768px)': {
     filterBox:{
-      display:'none'
+      display:'none',
+      width: '80%',
+      position: 'fixed',
+      height: '70%',
+      bottom: '1%',
+      margin: '0%',
+      zIndex:1
     }
   }
 }
@@ -61,7 +67,7 @@ const { classes } = jss.createStyleSheet(styles).attach();
 class Filters extends Component{
   render(){
     return(
-      <Paper className={classes.filterBox}>
+      <Paper className={classes.filterBox} id="filterBoxId">
         <center>
           <h3 style={{textShadow:'1px 1px #00f2a9',marginBottom:'4%'}}>Filter By:</h3>
         </center>
