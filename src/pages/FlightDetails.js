@@ -20,6 +20,11 @@ const styles = {
   flightContainer:{
     display:'flex',
     flexFlow:'column'
+  },
+  '@media screen and (max-width: 768px)': {
+    flightContainer:{
+      width:'100%'
+    }
   }
 }
 
@@ -54,7 +59,7 @@ class FlightDetails extends Component {
   render(){
     return(
       <div className={classes.mainContainer}>
-        <Filters/>
+        <Filters className={classes.filterSection}/>
         <div className={classes.flightContainer}>
           <DetailTable
             data={this.state.data}

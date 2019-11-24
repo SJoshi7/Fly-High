@@ -41,6 +41,11 @@ const styles= {
   },
   labelStyle:{
 
+  },
+  '@media screen and (max-width: 768px)': {
+    filterBox:{
+      display:'none'
+    }
   }
 }
 
@@ -50,114 +55,88 @@ class Filters extends Component{
   render(){
     return(
       <Paper className={classes.filterBox}>
-        <h3>Filters</h3>
+        <h3 style={{textShadow:'1px 1px #00f2a9'}}>Filters</h3>
         <div className={classes.checkboxContainer0}>
-          <h5>Airlines</h5>
+          <h3>Airlines</h3>
           <label class="container" className={classes.labelStyle}>
             Indigo
             <Checkbox color="primary"/>
             <span class="checkmark"></span>
           </label>
           <label class="container" className={classes.labelStyle}>Jet Airways
-            <Checkbox
-  color="primary"
-/>
+            <Checkbox color="primary"/>
             <span class="checkmark"></span>
           </label>
           <label class="container" className={classes.labelStyle}>Air India
-            <Checkbox
-  color="primary"
-/>
+            <Checkbox color="primary"/>
             <span class="checkmark"></span>
           </label>
         </div>
 
         <div className={classes.checkboxContainer0}>
-          <h5>Duration</h5>
+          <h3>Duration</h3>
           <label class="container">
             0-2
-            <Checkbox
-  color="primary"
-/>
+            <Checkbox color="primary"/>
             <span class="checkmark"></span>
           </label>
           <label class="container">
             2-3
-            <Checkbox
-  color="primary"
-/>
+            <Checkbox color="primary"/>
             <span class="checkmark"></span>
           </label>
           <label class="container">
             >3
-            <Checkbox
-  color="primary"
-/>
+            <Checkbox color="primary"/>
             <span class="checkmark"></span>
           </label>
         </div>
 
         <div className={classes.ArrivalDepartureBox}>
           <div className={classes.checkboxContainer}>
-            <h5>Departure</h5>
+            <h3>Departure</h3>
             <label class="container">
               12am-06am
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
             <label class="container">
               06am-12pm
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
             <label class="container">
               12pm-06pm
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
             <label class="container">
               06pm-12am
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
           </div>
 
           <div className={classes.checkboxContainer} style={{float:'left'}}>
-            <h5>Arrival</h5>
+            <h3>Arrival</h3>
             <label class="container">
               12am-06am
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
             <label class="container">
               06am-12pm
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
             <label class="container">
               12pm-06pm
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
             <label class="container">
               06pm-12am
-              <Checkbox
-  color="primary"
-/>
+              <Checkbox color="primary"/>
               <span class="checkmark"></span>
             </label>
           </div>
