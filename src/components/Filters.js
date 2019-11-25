@@ -88,17 +88,14 @@ class Filters extends Component{
           <label class="container">
             0-2hours
             <Checkbox color="primary"/>
-
           </label>
           <label class="container">
             2-3hours
             <Checkbox color="primary"/>
-
           </label>
           <label class="container">
             >3hours
             <Checkbox color="primary"/>
-
           </label>
         </div>
 
@@ -108,22 +105,18 @@ class Filters extends Component{
             <label class="container">
               12am-06am
               <Checkbox color="primary"/>
-
             </label>
             <label class="container">
               06am-12pm
               <Checkbox color="primary"/>
-
             </label>
             <label class="container">
               12pm-06pm
               <Checkbox color="primary"/>
-
             </label>
             <label class="container">
               06pm-12am
               <Checkbox color="primary"/>
-
             </label>
           </div>
 
@@ -132,30 +125,25 @@ class Filters extends Component{
             <label class="container">
               12am-06am
               <Checkbox color="primary"/>
-
             </label>
             <label class="container">
               06am-12pm
               <Checkbox color="primary"/>
-
             </label>
             <label class="container">
               12pm-06pm
               <Checkbox color="primary"/>
-
             </label>
             <label class="container">
               06pm-12am
               <Checkbox color="primary"/>
-
             </label>
           </div>
-
         </div>
         <center>
-        <Button variant="contained" className={classes.filterButton}>
-          Apply
-        </Button>
+          <Button variant="contained" className={classes.filterButton}>
+            Apply
+          </Button>
         </center>
       </Paper>
     )

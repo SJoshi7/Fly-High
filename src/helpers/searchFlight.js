@@ -5,7 +5,6 @@ export const searchFlight = () => {
   let source = document.getElementById('source').value.toLowerCase();
   let destination = document.getElementById('destination').value.toLowerCase();
   let seats = document.getElementById('seats').value;
-
   const isAvailable = (item) => {
     return (item.From === source && item.To === destination && item.Seats >= seats)
   }

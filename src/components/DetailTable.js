@@ -97,7 +97,6 @@ export default function DetailTable(props) {
             className={classes.cover}
             image={arrowRight}
           />
-
         </div>
 
         <div className={classes.styleDiv}>

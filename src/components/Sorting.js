@@ -61,7 +61,6 @@ class Sorting extends Component{
     return(
       <Paper className={classes.sortingBox} id="sortDiv">
         <h3 style={{textShadow:'1px 1px #00f2a9'}}>Sort By:</h3>
-
         <div className={classes.sortingContainer}>
           <FormControl component="fieldset" className={classes.formControl}>
              <RadioGroup aria-label="sort" name="sort" value={this.value} onChange={this.handleChange}>

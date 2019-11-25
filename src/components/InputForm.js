@@ -12,14 +12,12 @@ import {switchHelper} from '../helpers/switch';
 import airplane from '../images/airplane.svg';
 import {searchFlight} from '../helpers/searchFlight';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
-
 import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
 jss.setup(preset());
-
 
 const styles = {
   boxFormStyle: {
@@ -91,7 +89,6 @@ class InputForm extends Component{
       selectedDate: new Date()
     }
   }
-
   componentDidMount(){
       typewriter();
   }
@@ -121,9 +118,7 @@ class InputForm extends Component{
                 margin="normal"
                 id="source"
               />
-
               <FaExchangeAlt className={classes.exchangeIcon} onClick={switchHelper}/>
-
               <TextField
                 className={classes.inputTextStyle}
                 required
@@ -132,7 +127,6 @@ class InputForm extends Component{
                 margin="normal"
                 id="destination"
               />
-
               <MuiPickersUtilsProvider utils={DateFnsUtils}>
                   <KeyboardDatePicker
                     className={classes.datePickerStyle}
@@ -163,7 +157,6 @@ class InputForm extends Component{
                   margin="normal"
                   defaultValue="1"
                 />
-
                 <TextField
                   className={classes.rightInputTextStyle}
                   id="standard-required"
@@ -184,7 +177,6 @@ class InputForm extends Component{
               </Button>
               </Link>
             </center>
-
           </Paper>
         </Grid>
       </Grid>
