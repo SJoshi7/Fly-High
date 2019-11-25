@@ -28,6 +28,12 @@ const styles = {
   tabStyle:{
     display:'none'
   },
+  noFlights:{
+    marginTop:'40%',
+    fontSize:'2rem',
+    margin:'18%',
+    textShadow:'2px 2px white'
+  },
   '@media screen and (max-width: 768px)': {
     flightContainer:{
       width:'100%'
@@ -89,15 +95,20 @@ class FlightDetails extends Component {
       }
     })
   }
+
+  componentDidMount(){
+    if(this.state.data.length>0){
+      document.getElementById('noFlight').style.display='none';
+    }
+  }
   render(){
     return(
       <div>
       <div className={classes.mainContainer}>
         <Filters className={classes.filterSection}/>
         <div className={classes.flightContainer} id="flightContainerId">
-          <DetailTable
-            data={this.state.data}
-            />
+            <DetailTable data={this.state.data}/>
+            <h3 className={classes.noFlights} id='noFlight'>Sorry, No Flights Found!</h3>
         </div>
         <Sorting sortBy={this.sortBy} data={this.state.data}/>
         </div>
