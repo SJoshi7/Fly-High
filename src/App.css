@@ -139,3 +139,20 @@ a{
     from {left: 10%;top:60%;opacity: 1;}
     to{left:70%;top:20%;opacity: 0}
 }
+
+#paraglidingImage{
+  position: absolute;
+  top:10%;
+  left:10%;
+  z-index: 1;
+  animation-name: paraglidingTransform;
+  animation-delay:500;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes paraglidingTransform{
+  from {left: 10%;top:10%;opacity: 1;}
+  to{left:43%;top:43%;opacity: 1}
+}
