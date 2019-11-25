@@ -106,7 +106,7 @@ class FlightDetails extends Component {
       <div>
       <div className={classes.mainContainer}>
         <Filters className={classes.filterSection}/>
-        <div className={classes.flightContainer} id="flightContainerId">
+        <div className={classes.flightContainer} id="flightContainerId" style={{marginBottom:'3%'}}>
             <DetailTable data={this.state.data}/>
             <h3 className={classes.noFlights} id='noFlight'>Sorry, No Flights Found!</h3>
         </div>

@@ -141,7 +141,11 @@ class Filters extends Component{
           </div>
         </div>
         <center>
-          <Button variant="contained" className={classes.filterButton}>
+          <Button variant="contained" className={classes.filterButton}
+            onClick={()=>{
+              document.getElementById('filterBoxId').style.display = 'none';
+              document.getElementById('flightContainerId').style.opacity = 1;
+            }}>
             Apply
           </Button>
         </center>
