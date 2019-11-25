@@ -143,6 +143,7 @@ class InputForm extends Component{
                     id="date-picker-inline"
                     label="Travel Date"
                     fullWidth
+                    autoOk="true"
                     value={this.state.selectedDate}
                     onChange={this.handleDateChange}
                     KeyboardButtonProps={{

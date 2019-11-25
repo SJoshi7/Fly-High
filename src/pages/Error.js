@@ -11,9 +11,15 @@ const styles={
   },
   errorMessage:{
     fontSize:'2rem',
-    position:'absolute',
     left:'25%',
-    top:'55%'
+    position:'absolute',
+    top:'55%',
+    textShadow:'1px 1px white'
+  },
+  '@media screen and (max-width: 768px)':{
+    errorMessage:{
+      left:'0%'
+    }
   }
 }
 
@@ -23,7 +29,9 @@ const Error = () => {
   return(
     <div className="home">
       <img src={paragliding} className={classes.imageStyle} id="paraglidingImage"/>
-      <h3 className={classes.errorMessage}>You Have Landed on a Wrong Page!</h3>
+      <center>
+        <h3 className={classes.errorMessage}>You Have Landed on a Wrong Page!</h3>
+      </center>
     </div>
   );
 }
