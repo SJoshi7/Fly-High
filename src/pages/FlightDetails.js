@@ -19,7 +19,8 @@ const styles = {
   filterConatiner:{
     height:"400px",
     width:'400px',
-    backgroundColor:'red'
+    backgroundColor:'red',
+    marginTop:'5%'
   },
   flightContainer:{
     display:'flex',

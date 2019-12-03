@@ -60,8 +60,7 @@ const styles= {
 
 const { classes } = jss.createStyleSheet(styles).attach();
 
-class Filters extends Component{
-  render(){
+const Filters = () => {
     return(
       <Paper className={classes.filterBox} id="filterBoxId">
         <center>
@@ -151,7 +150,6 @@ class Filters extends Component{
         </center>
       </Paper>
     )
-  }
 }
 
 export default Filters;

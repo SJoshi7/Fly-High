@@ -153,6 +153,6 @@ a{
 
 
 @keyframes paraglidingTransform{
-  from {left: 10%;top:10%;opacity: 1;}
-  to{left:43%;top:43%;opacity: 1}
+  from {left: 10%;top:10%;}
+  to{left:43%;top:43%;}
 }

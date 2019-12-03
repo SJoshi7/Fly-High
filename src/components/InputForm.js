@@ -39,7 +39,12 @@ const styles = {
   },
   rightInputTextStyle:{
     marginLeft:'11%',
-    width:'40%'
+    marginTop:'5%',
+    width:'40%',
+    border:'none',
+    borderBottom:'1px black solid',
+    height:'40px',
+    fontSize:'1rem'
   },
   datePickerStyle:{
     width:'92%'
@@ -157,13 +162,16 @@ class InputForm extends Component{
                   margin="normal"
                   defaultValue="1"
                 />
-                <TextField
+                <select
+                  required
                   className={classes.rightInputTextStyle}
                   id="standard-required"
-                  label="Pay in (currency)"
-                  defaultValue="INR"
-                  margin="normal"
-                />
+                >
+                  <option value="inr">Indian Rupees</option>
+                  <option value="usd">US Dollars</option>
+                  <option value="uae">UAE Dirham</option>
+                  <option value="euro">Euro</option>
+                </select>
               </div>
             </div>
             <center>
